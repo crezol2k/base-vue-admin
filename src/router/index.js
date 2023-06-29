@@ -65,7 +65,8 @@ watch(() => store.state.login.isLogged, (newVal) => {
 });
 
 router.beforeEach((to, from, next) => {
-  isLoggedIn = store.state.login.isLogged;
+  // isLoggedIn = store.state.login.isLogged;
+  isLoggedIn = true
 
   if (to.path === "/login" && isLoggedIn) {
     next({ path: "/", replace: true });

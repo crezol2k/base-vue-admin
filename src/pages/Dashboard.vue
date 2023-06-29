@@ -17,7 +17,7 @@ onMounted(async()=>{
 	store.dispatch("getListEvents")
 	store.dispatch("getListUsers")
 
-	store.dispatch("getAccountUser")
+	// store.dispatch("getAccountUser")
 
 	if (user) {
 		store.dispatch("writeUserToFireStore", user)

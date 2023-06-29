@@ -1,8 +1,21 @@
 import { getAuth, getCurentUser } from "../util/auth";
 
 const api_token = getAuth()?.api_token;
-const currentUser = getCurentUser();
-
+const currentUser = {
+  activated: true,
+  authorities: ["ROLE_USER"],
+  createdBy: "hungndk",
+  createdDate: "2023-06-22T07:49:20.023055Z",
+  email: "dangnv@stdio.asia",
+  firstName: "Van",
+  id: 1056,
+  imageUrl: null,
+  langKey: "en",
+  lastModifiedBy: "hungndk",
+  lastModifiedDate: "2023-06-22T07:49:20.023055Z",
+  lastName: "Dang",
+  login: "dangnv",
+};
 const state = {
   sideBar: {
     show: true,
@@ -27,7 +40,7 @@ const state = {
   listUsers: {
     isLoading: false,
     data: [],
-    dataFilter: []
+    dataFilter: [],
   },
 };
 export default state;

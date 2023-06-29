@@ -42,7 +42,7 @@
           </div>
 
           <div class="flex flex-col">
-            <span class=" text-white">{{ user?.firstName + " " + user?.lastName  }}</span>
+            <span class=" text-white text-[15px]">{{ user?.lastName}} / {{ user?.email }}</span>
           </div>
         </div>
       </ul>
