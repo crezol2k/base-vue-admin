@@ -1,15 +1,15 @@
 <template>
 
-  <header class="bg-white shadow h-16 w-full border-b border-gray-200 dark:bg-gray-800 dark:border-gray-700 fixed top-0 left-0 right-0 z-10">
-    <div class="px-3 py-3 lg:px-5 lg:pl-3">
-      <div class="flex items-center justify-between">
+  <header class="bg-[#000000e6] shadow h-16 w-full fixed top-0 left-0 right-0 z-10 border-b border-[#333]">
+    <div class="px-3 py-3 lg:px-5 lg:pl-3 ">
+      <div class="flex items-center justify-between px-5">
         <div class="flex items-center justify-start">
           <router-link :to="{ name: 'dashboard' }" class="flex ml-2 mr-4">
             <img src="../assets/logo-stdio.png" class="h-8 mr-3 rounded-full" alt="FlowBite Logo" />
 
             <span class="self-center text-xl font-semibold sm:text-2xl whitespace-nowrap dark:text-white">Mini tools</span>
           </router-link>
-          <button @click="toggleSidebar" class="h-6"><img class="w-full h-full" src="../assets/menu.svg" alt="FlowBite Logo" /></button>
+          <button @click="toggleSidebar" class="h-6 ml-3"><img class="w-full h-full" src="../assets/menu.svg" alt="FlowBite Logo" /></button>
         </div>
         <div class="flex items-center">
           <div class="flex items-center ml-3">
